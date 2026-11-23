@@ -1,0 +1,6 @@
+{
+  "name": "Kings Dental Center Hilal | مركز كينغز للأسنان الهلال",
+  "description": "مركز كينغز للأسنان الهلال في الدوحة، قطر — رعاية أسنان شاملة تجمع بين الخبرة الطبية والراحة في موقع مميز على الطريق الدائري الرابع.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

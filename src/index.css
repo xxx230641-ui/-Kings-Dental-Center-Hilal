@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ivory: #FAF7F2;
+  --color-beige: #F2ECE1;
+  --color-sand: #E6DDD0;
+  --color-espresso: #241811;
+  --color-espresso-soft: #3B281E;
+  --color-bronze-ink: #5A4335;
+  --color-gold: #B88B36;
+  --color-gold-deep: #8E6720;
+  --color-gold-light: #E7D29A;
+
+  --font-arabic-sans: "IBM Plex Sans Arabic", system-ui, -apple-system, sans-serif;
+  --font-arabic-display: "Alexandria", "IBM Plex Sans Arabic", system-ui, sans-serif;
+  --font-latin-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-latin-display: "Cormorant Garamond", Georgia, serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    overflow-x: clip;
+  }
+
+  body {
+    background-color: #FAF7F2;
+    color: #241811;
+    overflow-x: clip;
+  }
+
+  html[lang="ar"] body {
+    font-family: var(--font-arabic-sans);
+  }
+
+  html[lang="ar"] .font-display {
+    font-family: var(--font-arabic-display);
+  }
+
+  html[lang="en"] body {
+    font-family: var(--font-latin-sans);
+  }
+
+  html[lang="en"] .font-display {
+    font-family: var(--font-latin-display);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
